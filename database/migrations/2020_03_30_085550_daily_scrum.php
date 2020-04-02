@@ -16,7 +16,7 @@ class DailyScrum extends Migration
         Schema::create('daily_scrum', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('id_users');
-            $table->enum('role', array('DDS','BEON','DOT','node1','node2','react1','react2','laravel','laravel_vue','android'));
+            $table->enum('team', array('DDS','BEON','DOT','node1','node2','react1','react2','laravel','laravel_vue','android'));
             $table->text('activity_yesterday');
             $table->text('activity_today');
             $table->text('problem_yesterday');
